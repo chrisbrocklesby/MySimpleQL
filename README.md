@@ -7,6 +7,15 @@ MySimpleQL is a DB Connector (MySQL2) with built in easy CRUD functions.
 npm i mysimpleql
 ```
 
+## Connect to MySQL (.env)
+Create a .env file with the following params
+```
+MYSQL_HOST=localhost
+MYSQL_USER=username
+MYSQL_PASSWORD=password
+MYSQL_DATABASE=databasename
+```
+
 ## Require
 ```js
 const { Model, query } = require('mysimpleql');
@@ -19,6 +28,8 @@ const Post = new Model('posts');
 ```
 
 ## CRUD Functions
+Please note these CRUD Functions are designed to be used within a async function.
+
 ### Create
 ```js
 await Post.create({ 
@@ -47,11 +58,11 @@ await Post.delete({ id: 1 });
 ```
 
 ## RAW MySQL Query
-### Escape MySQL / Placeholder
+### Quick Raw Query
 ```js
 await query('SELECT * FROM posts');
 ```
-### Escape MySQL / Placeholder
+### Escaped Placeholder Raw Query
 ```js
 await query('SELECT * FROM posts WHERE title LIKE ?', ['%hello%']);
 ```

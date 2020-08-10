@@ -1,16 +1,15 @@
 {
   "name": "mysimpleql",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "MySimpleQL is a DB Connector with built in easy CRUD functions",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
+    "MySimpleQL",
     "MySQL",
     "DB",
     "Connector",
     "Query",
+    "CRUD",
     "Model",
     "Functions",
     "Database",
