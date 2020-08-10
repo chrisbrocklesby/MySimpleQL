@@ -1,6 +1,6 @@
 # MySimpleQL
 
-MySimpleQL is a DB Connector (MySQL2) with built in easy CRUD functions.
+MySimpleQL is a MySQL Connector with built in simple CRUD functions for faster development. MySimpleQL also has a optional safe raw function for quick custom queries.
 
 ## ✅Install
 ```
