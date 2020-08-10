@@ -1,0 +1,2 @@
+# MySimpleQL
+ MySQL made simple
