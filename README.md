@@ -1,13 +1,13 @@
 # MySimpleQL
 
 MySimpleQL is a DB Connector (MySQL2) with built in easy CRUD functions.
- 
-## Install
+
+## ✅Install
 ```
 npm i mysimpleql
 ```
 
-## Connect to MySQL (.env)
+## ✅Connect to MySQL (.env)
 Create a .env file with the following params
 ```
 MYSQL_HOST=localhost
@@ -16,18 +16,18 @@ MYSQL_PASSWORD=password
 MYSQL_DATABASE=databasename
 ```
 
-## Require
+## ✅Require
 ```js
 const { Model, query } = require('mysimpleql');
 ```
 
-## Create a Model
+## ✅Create a Model
 ```js
 const Post = new Model('posts');
 // const ModelName = new Model('tableName');
 ```
 
-## CRUD Functions
+## 💻CRUD Functions
 Please note these CRUD Functions are designed to be used within a async function.
 
 ### Create
@@ -41,15 +41,21 @@ await Post.create({
 ### Read
 ```js
 await Post.read();
+// or
 await Post.read({ id: 1 });
-// await Post.read({ pk: 1 });
-// await Post.read({ email: 'user@email.ext' });
+// or
+await Post.read({ pk: 1 });
+// or
+await Post.read({ email: 'user@email.ext' });
+// or
+await Post.read({ anyKey: 'anyValue' });
 ```
 
 ### Update
 ```js
 await Post.update({ id: 1 }, { title: 'Hello World' });
-// await Post.update({ pk: '12345-abcde-09876-54321' }, { title: 'Hello World' }));
+
+await Post.update({ pk: '12345-abcde-09876-54321' }, { title: 'Hello World' }));
 ```
 
 ### Delete
@@ -57,7 +63,7 @@ await Post.update({ id: 1 }, { title: 'Hello World' });
 await Post.delete({ id: 1 });
 ```
 
-## RAW MySQL Query
+## 💻RAW MySQL Query
 ### Quick Raw Query
 ```js
 await query('SELECT * FROM posts');
@@ -85,3 +91,26 @@ async function exampleFunction() {
 
 exampleFunction();
 ```
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome. 
+
+## Authors
+
+👤 **Chris Brocklesby**
+
+- Twitter: [@ChrisBrocklesby](https://twitter.com/ChrisBrocklesby)
+- Github: [@ChrisBrocklesby](https://github.com/ChrisBrocklesby)
+
+See also the list of contributors who [participated](https://github.com/chrisbrocklesby/mysimpleql/contributors) in this project.
+
+## Show Your Support
+
+Please ⭐️ this repository if this project helped you!
+
+## 📝 License
+
+Copyright © 2020 [Chris Brocklesby](https://github.com/ChrisBrocklesby).
+
+This project is licensed under the MIT License - see the [LICENSE file](LICENSE) for details.

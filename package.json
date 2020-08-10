@@ -16,7 +16,7 @@
     "SQL"
   ],
   "author": "Chris Brocklesby",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^8.2.0",
     "mysql2": "^2.1.0"
