@@ -66,3 +66,22 @@ await query('SELECT * FROM posts');
 ```js
 await query('SELECT * FROM posts WHERE title LIKE ?', ['%hello%']);
 ```
+
+### Example Usage
+```js
+const { Model, query } = require('mysimpleql');
+
+const Post = new Model('posts');
+
+async function exampleFunction() {
+  try {
+    const allPosts = await Post.read();
+    console.log(allPosts);
+  } 
+  catch (error) {
+    console.log(error);
+  }
+}
+
+exampleFunction();
+```
