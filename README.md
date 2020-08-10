@@ -1,2 +1,2 @@
-# MySimpleQL
- MySQL made simple
+# MySQLDB
+ MySQLDB

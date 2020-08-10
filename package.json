@@ -1,0 +1,25 @@
+{
+  "name": "mysimpleql",
+  "version": "1.0.0",
+  "description": "MySimpleQL is a DB Connector and with simple query functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MySQL",
+    "DB",
+    "Connector",
+    "Query",
+    "Model",
+    "Functions",
+    "Database",
+    "SQL"
+  ],
+  "author": "Chris Brocklesby",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mysql2": "^2.1.0"
+  }
+}
