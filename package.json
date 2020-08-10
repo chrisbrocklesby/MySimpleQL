@@ -1,7 +1,7 @@
 {
   "name": "mysimpleql",
-  "version": "1.0.1",
-  "description": "MySimpleQL is a DB Connector and with simple query functions.",
+  "version": "1.0.3",
+  "description": "MySimpleQL is a DB Connector with built in easy CRUD functions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
